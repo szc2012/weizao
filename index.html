@@ -1,0 +1,410 @@
+<html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泉海学校伪造工作室</title>
+    <!-- Tailwind CSS v3 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 统一的 Tailwind 配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#003366',      // 深蓝色
+                        secondary: '#c8161d',    // 红色
+                        neutral: '#f5f5f5',      // 浅灰色
+                        dark: '#333333',         // 深灰色
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            }
+            .hover-scale {
+                transition: transform 0.3s ease;
+            }
+            .hover-scale:hover {
+                transform: scale(1.03);
+            }
+            .news-title-hover:hover {
+                color: #c8161d;
+                text-decoration: underline;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- 顶部信息栏 -->
+
+    </div>
+
+    <!-- 头部区域 -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src=".\img\logo.svg" alt="政府标志" class="h-12 mr-4">
+                    <div>
+                        <h1 class="text-2xl md:text-3xl font-bold text-primary">泉海学校伪造工作室</h1>
+                        <p class="text-sm text-gray-600">官方网站</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- 主导航栏 -->
+    <nav class="bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="py-3 px-2 font-medium hover:bg-blue-800 transition duration-200">首页</a>
+                    <a href="#" class="py-3 px-2 font-medium hover:bg-blue-800 transition duration-200">进度公开</a>
+                    <a href="#" class="py-3 px-2 font-medium hover:bg-blue-800 transition duration-200">新闻发布</a>
+                    <a href="#" class="py-3 px-2 font-medium hover:bg-blue-800 transition duration-200">政策解读</a>
+                    <a href="#" class="py-3 px-2 font-medium hover:bg-blue-800 transition duration-200">合作交流</a>
+                    <a href="#" class="py-3 px-2 font-medium hover:bg-blue-800 transition duration-200">伪造服务</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="py-3 px-2">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- 移动端菜单 -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="#" class="block py-2 px-2 hover:bg-blue-800 transition duration-200">首页</a>
+                <a href="#" class="block py-2 px-2 hover:bg-blue-800 transition duration-200">政务公开</a>
+                <a href="#" class="block py-2 px-2 hover:bg-blue-800 transition duration-200">新闻发布</a>
+                <a href="#" class="block py-2 px-2 hover:bg-blue-800 transition duration-200">政策解读</a>
+                <a href="#" class="block py-2 px-2 hover:bg-blue-800 transition duration-200">互动交流</a>
+                <a href="#" class="block py-2 px-2 hover:bg-blue-800 transition duration-200">服务大厅</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main class="container mx-auto px-4 py-6">
+        <!-- 轮播图 -->
+        <section class="mb-8">
+            <div class="relative overflow-hidden rounded-lg shadow-lg">
+                <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+                    <div class="min-w-full">
+                        <div class="relative">
+                            <img src=".\img\churuzheng.jpeg" alt="新闻发布会" class="w-full h-96 object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                                <h2 class="text-2xl font-bold text-white mb-2 text-shadow">新版学校出入证伪造完成</h2>
+                                <p class="text-white/90 mb-4 text-shadow">2025年10月，成功伪造新版“泉海学校学生出入证”</p>
+                                <a href="#" class="inline-block bg-secondary text-white px-4 py-2 rounded hover:bg-red-700 transition duration-200">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min-w-full">
+                        <div class="relative">
+                            <img src="https://p26-doubao-search-sign.byteimg.com/tos-cn-i-xv4ileqgde/76c1f2c9c4ea4626be01b9e2b76e1796~tplv-be4g95zd3a-image.jpeg?rk3s=542c0f93&amp;x-expires=1777031747&amp;x-signature=fR%2FOdU4t4al%2FB%2FswcLGJX3jBj8E%3D" alt="地方新闻发布会" class="w-full h-96 object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                                <h2 class="text-2xl font-bold text-white mb-2 text-shadow">地方政府举行系列新闻发布会</h2>
+                                <p class="text-white/90 mb-4 text-shadow">介绍地方发展成就和未来规划</p>
+                                <a href="#" class="inline-block bg-secondary text-white px-4 py-2 rounded hover:bg-red-700 transition duration-200">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min-w-full">
+                        <div class="relative">
+                            <img src="https://p3-doubao-search-sign.byteimg.com/labis/964e37c4f4a2a7906273b09067af1575~tplv-be4g95zd3a-image.jpeg?rk3s=542c0f93&amp;x-expires=1777031747&amp;x-signature=lNmosecgltZw%2FFyh25n0QKCMLhs%3D" alt="政府大楼" class="w-full h-96 object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                                <h2 class="text-2xl font-bold text-white mb-2 text-shadow">现代化政府办公大楼</h2>
+                                <p class="text-white/90 mb-4 text-shadow">打造高效透明的政务环境</p>
+                                <a href="#" class="inline-block bg-secondary text-white px-4 py-2 rounded hover:bg-red-700 transition duration-200">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 轮播图控制按钮 -->
+                <button id="prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition duration-200">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <button id="next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition duration-200">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+                <!-- 轮播图指示器 -->
+                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+                    <button class="w-3 h-3 rounded-full bg-white opacity-100 carousel-indicator" data-index="0"></button>
+                    <button class="w-3 h-3 rounded-full bg-white opacity-50 carousel-indicator" data-index="1"></button>
+                    <button class="w-3 h-3 rounded-full bg-white opacity-50 carousel-indicator" data-index="2"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 新闻分类导航 -->
+        <section class="mb-8">
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="flex flex-wrap justify-between items-center">
+                    <div class="flex space-x-4 mb-4 md:mb-0">
+                        <a href="#" class="px-4 py-2 bg-primary text-white rounded-md hover:bg-blue-800 transition duration-200">全部</a>
+                        <a href="#" class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-200">重要新闻</a>
+                        <a href="#" class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-200">政策发布</a>
+                        <a href="#" class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-200">工作动态</a>
+                        <a href="#" class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-200">通知公告</a>
+                    </div>
+                    <div class="flex space-x-2">
+                        <a href="#" class="text-primary hover:underline">更多 <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 新闻列表 -->
+        <section class="mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- 主要新闻 -->
+                <div class="md:col-span-2">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold text-primary mb-4 pb-2 border-b border-gray-200">最新动态</h2>
+                            <div class="space-y-6">
+                                <!-- 新闻项 1 -->
+                                <div class="flex flex-col md:flex-row gap-4 hover-scale">
+                                    <div class="md:w-1/3">
+                                        <img src=".\img\churuzheng.jpeg" alt="新闻图片" class="w-full h-40 object-cover rounded-md">
+                                    </div>
+                                    <div class="md:w-2/3">
+                                        <h3 class="text-lg font-bold mb-2 news-title-hover">
+                                            <a href="page1026.html">2025年10月，成功伪造新版“泉海学校学生出入证</a>
+                                        </h3>
+                                        <p class="text-gray-600 mb-3 line-clamp-2">新版学校出入证伪造完成，包含学校公章、出入证和批量印刷</p>
+                                        <div class="flex items-center text-sm text-gray-500">
+                                            <span><i class="fa fa-clock-o mr-1"></i> 2025-10-26</span>
+                                            <span class="mx-2">|</span>
+                                            <span><i class="fa fa-eye mr-1"></i> 3,245</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- 新闻项 2 -->
+                                <div class="flex flex-col md:flex-row gap-4 hover-scale">
+                                    <div class="md:w-1/3">
+                                        <img src=".\img\huohua.jpeg" alt="新闻图片" class="w-full h-40 object-cover rounded-md">
+                                    </div>
+                                    <div class="md:w-2/3">
+                                        <h3 class="text-lg font-bold mb-2 news-title-hover">
+                                            <a href="news-detail.html">火化证明成功伪造</a>
+                                        </h3>
+                                        <p class="text-gray-600 mb-3 line-clamp-2">2025年10月，成功伪造“火化证明”，包含火化证明和批量印刷</p>
+                                        <div class="flex items-center text-sm text-gray-500">
+                                            <span><i class="fa fa-clock-o mr-1"></i> 2025-07-21</span>
+                                            <span class="mx-2">|</span>
+                                            <span><i class="fa fa-eye mr-1"></i> 2,876</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- 分页 -->
+                            <div class="mt-8 flex justify-center">
+                                <nav class="inline-flex rounded-md shadow">
+                                    <a href="#" class="py-2 px-4 bg-white border border-gray-300 rounded-l-md text-gray-700 hover:bg-gray-50">
+                                        <i class="fa fa-angle-left"></i>
+                                    </a>
+                                    <a href="#" class="py-2 px-4 bg-primary text-white border border-primary">1</a>
+                                    <a href="#" class="py-2 px-4 bg-white border border-gray-300 text-gray-700 hover:bg-gray-50">2</a>
+                                    <a href="#" class="py-2 px-4 bg-white border border-gray-300 text-gray-700 hover:bg-gray-50">3</a>
+                                    <a href="#" class="py-2 px-4 bg-white border border-gray-300 text-gray-700 hover:bg-gray-50">4</a>
+                                    <a href="#" class="py-2 px-4 bg-white border border-gray-300 text-gray-700 hover:bg-gray-50">5</a>
+                                    <a href="#" class="py-2 px-4 bg-white border border-gray-300 rounded-r-md text-gray-700 hover:bg-gray-50">
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 侧边栏 -->
+                <div class="md:col-span-1">
+                    
+                    <!-- 政策文件 -->
+                    <div class="bg-white rounded-lg shadow-md">
+                        <div class="p-4 border-b border-gray-200">
+                            <h2 class="text-lg font-bold text-primary">政策文件</h2>
+                        </div>
+                        <div class="p-4">
+                            <ul class="space-y-3">
+                                <li>
+                                    <a href="#" class="flex items-center hover:text-secondary transition duration-200">
+                                        <i class="fa fa-file-text-o text-primary mr-2"></i>
+                                        <span class="text-sm">关于促进经济高质量发展的若干意见</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center hover:text-secondary transition duration-200">
+                                        <i class="fa fa-file-text-o text-primary mr-2"></i>
+                                        <span class="text-sm">2025年政府工作报告</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center hover:text-secondary transition duration-200">
+                                        <i class="fa fa-file-text-o text-primary mr-2"></i>
+                                        <span class="text-sm">关于加强生态文明建设的实施意见</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center hover:text-secondary transition duration-200">
+                                        <i class="fa fa-file-text-o text-primary mr-2"></i>
+                                        <span class="text-sm">数字政府建设规划（2025-2030年）</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center hover:text-secondary transition duration-200">
+                                        <i class="fa fa-file-text-o text-primary mr-2"></i>
+                                        <span class="text-sm">关于完善社会保障体系的实施方案</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mt-4 text-right">
+                                <a href="#" class="text-primary text-sm hover:underline">更多 <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-primary text-white mt-10">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">关于我们</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-neutral transition duration-200">机构介绍</a></li>
+                        <li><a href="#" class="hover:text-neutral transition duration-200">主要职责</a></li>
+                        <li><a href="#" class="hover:text-neutral transition duration-200">领导介绍</a></li>
+                        <li><a href="#" class="hover:text-neutral transition duration-200">机构设置</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">政务公开</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-neutral transition duration-200">政策文件</a></li>
+                        <li><a href="#" class="hover:text-neutral transition duration-200">规划计划</a></li>
+                        <li><a href="#" class="hover:text-neutral transition duration-200">工作动态</a></li>
+                        <li><a href="#" class="hover:text-neutral transition duration-200">统计数据</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">办事服务</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-neutral transition duration-200"></a></li>
+                        <li><a href="#" class="hover:text-neutral transition duration-200"></a></li>
+                        <li><a href="#" class="hover:text-neutral transition duration-200">在线申报</a></li>
+                        <li><a href="#" class="hover:text-neutral transition duration-200"></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">联系我们</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fa fa-map-marker mr-2"></i> 地址：济南市市中区中海国际社区C1片区</li>
+                        <li><i class="fa fa-envelope mr-2"></i> 邮箱：2315623420@qq.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-6 text-center text-sm">
+                <p>Copyright © 2025 XX 版权所有</p>
+                <p class="mt-2">网站标识码：1234567890 ICP备案号：ICP备12345678号</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 当前日期显示
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateElement = document.getElementById('current-date');
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+            dateElement.textContent = now.toLocaleDateString('zh-CN', options);
+            
+            // 移动端菜单切换
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // 轮播图功能
+            const carousel = document.getElementById('carousel');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const indicators = document.querySelectorAll('.carousel-indicator');
+            let currentIndex = 0;
+            const totalSlides = 3;
+            
+            function updateCarousel() {
+                carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+                
+                // 更新指示器状态
+                indicators.forEach((indicator, index) => {
+                    if (index === currentIndex) {
+                        indicator.classList.add('opacity-100');
+                        indicator.classList.remove('opacity-50');
+                    } else {
+                        indicator.classList.add('opacity-50');
+                        indicator.classList.remove('opacity-100');
+                    }
+                });
+            }
+            
+            prevBtn.addEventListener('click', function() {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            });
+            
+            nextBtn.addEventListener('click', function() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel();
+            });
+            
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', function() {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+            
+            // 自动轮播
+            let autoplayInterval = setInterval(function() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel();
+            }, 5000);
+            
+            // 鼠标悬停时暂停自动轮播
+            carousel.parentElement.addEventListener('mouseenter', function() {
+                clearInterval(autoplayInterval);
+            });
+            
+            // 鼠标离开时恢复自动轮播
+            carousel.parentElement.addEventListener('mouseleave', function() {
+                autoplayInterval = setInterval(function() {
+                    currentIndex = (currentIndex + 1) % totalSlides;
+                    updateCarousel();
+                }, 5000);
+            });
+            
+
+        });
+    </script>
+
+</body></html>

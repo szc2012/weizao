@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻详情</title>
+    <!-- Tailwind CSS v3 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 统一的 Tailwind 配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#003366',      // 深蓝色
+                        secondary: '#c8161d',    // 红色
+                        neutral: '#f5f5f5',      // 浅灰色
+                        dark: '#333333',         // 深灰色
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            }
+            .hover-scale {
+                transition: transform 0.3s ease;
+            }
+            .hover-scale:hover {
+                transform: scale(1.03);
+            }
+            .news-title-hover:hover {
+                color: #c8161d;
+                text-decoration: underline;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- 顶部信息栏 -->
+    <div class="bg-primary text-white text-center py-2 text-sm">
+        <div class="container mx-auto px-4">
+            <span id="current-date"></span>
+        </div>
+    </div>
+
+    <!-- 头部区域 -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="./img/logo.svg" alt="政府标志" class="h-12 mr-4">
+                    <div>
+                        <h1 class="text-2xl md:text-3xl font-bold text-primary">新闻详情</h1>
+                        <p class="text-sm text-gray-600">官方网站</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主导航栏 -->
+    <nav class="bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="py-3 px-2 font-medium hover:bg-blue-800 transition duration-200">首页</a>
+                    <a href="#" class="py-3 px-2 font-medium hover:bg-blue-800 transition duration-200">新闻发布</a>
+                    <a href="#" class="py-3 px-2 font-medium hover:bg-blue-800 transition duration-200">政策解读</a>
+                    <a href="#" class="py-3 px-2 font-medium hover:bg-blue-800 transition duration-200">合作交流</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="py-3 px-2">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- 移动端菜单 -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="#" class="block py-2 px-2 hover:bg-blue-800 transition duration-200">首页</a>
+                <a href="#" class="block py-2 px-2 hover:bg-blue-800 transition duration-200">新闻发布</a>
+                <a href="#" class="block py-2 px-2 hover:bg-blue-800 transition duration-200">政策解读</a>
+                <a href="#" class="block py-2 px-2 hover:bg-blue-800 transition duration-200">合作交流</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main class="container mx-auto px-4 py-6">
+        <!-- 面包屑导航 -->
+        <div class="mb-6 text-sm text-gray-600">
+            <a href="#" class="hover:text-primary">首页</a> > 
+            <a href="#" class="hover:text-primary">新闻发布</a> > 
+            <span class="text-primary">新闻详情</span>
+        </div>
+
+        <!-- 新闻标题和元信息 -->
+        <div class="mb-6">
+            <h1 class="text-3xl font-bold text-primary mb-4">新版学校出入证伪造完成</h1>
+            <div class="flex items-center text-sm text-gray-500 mb-4">
+                <span><i class="fa fa-clock-o mr-1"></i> 2025-10-26</span>
+                <span class="mx-2">|</span>
+                <span><i class="fa fa-eye mr-1"></i> 3,245</span>
+                <span class="mx-2">|</span>
+                <span><i class="fa fa-user mr-1"></i> 作者：宋梓辰</span>
+            </div>
+        </div>
+
+        <!-- 新闻内容 -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-primary mb-4">2025年10月，成功伪造新版“泉海学校学生出入证”</h2>
+                <p class="text-gray-600 mb-4">新版学校出入证伪造完成，包含学校公章、出入证和批量印刷。</p>
+                <p class="text-gray-600 mb-4">此次伪造工作历时一个月，团队成员克服了多项技术难题，最终成功完成。</p>
+                <p class="text-gray-600 mb-4">伪造了包括公章在内的文件，并成功伪造出入证，并批量印刷。</p>
+                <h2 class="text-2xl font-bold text-primary mb-4">伪造制法</h2>
+                <p class="text-gray-600 mb-4">1.下载附件中的“出入证样本.pdf”文件，和“出入证样本.docx”。</p>
+                <p class="text-gray-600 mb-4">2.使用喷墨打印机双面打印“出入证样本.pdf”第二页和第三页</p>
+                <p class="text-gray-600 mb-4">2.使用激光打印机双面打印“出入证样本.docx”第一页</p>
+                <iframe 
+                    src=".\fille\出入证样本.pdf" 
+                    width="100%" 
+                     height="600px"
+                  frameborder="0">
+                  您的浏览器不支持 PDF 预览，请<a href=".\fille\出入证样本.pdf">下载文件</a>查看。
+                </iframe>
+            </div>
+
+            <!-- 附件 -->
+            <div class="border-t border-gray-200 pt-6">
+                <h2 class="text-xl font-bold text-primary mb-4">附件</h2>
+                <ul class="space-y-4">
+                    <li>
+                        <a href=".\fille\出入证样本.pdf" class="flex items-center hover:text-secondary transition duration-200">
+                            <i class="fa fa-file-pdf-o text-primary mr-2"></i>
+                            <span class="text-sm">.\fille\出入证样本.pdf"</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=".\fille\出入证样本.docx" class="flex items-center hover:text-secondary transition duration-200">
+                            <i class="fa fa-file-word-o text-primary mr-2"></i>
+                            <span class="text-sm">.\fille\出入证样本.docx</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-primary text-white mt-10">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">关于我们</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-neutral transition duration-200">机构介绍</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">联系我们</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fa fa-map-marker mr-2"></i> 地址：济南市市中区中海国际社区C1片区</li>
+                        <li><i class="fa fa-envelope mr-2"></i> 邮箱：example@example.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-6 text-center text-sm">
+                <p>Copyright © 2025 新闻详情 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 当前日期显示
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateElement = document.getElementById('current-date');
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+            dateElement.textContent = now.toLocaleDateString('zh-CN', options);
+            
+            // 移动端菜单切换
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="850px" height="550px" viewBox="0 0 850 550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>出入证</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" stroke="#000000" stroke-width="2" fill="#FA6400" x="1" y="1" width="848" height="548"></rect>
+        <text id="泉海学校学生出入证" font-family="STSongti-SC-Regular, Songti SC" font-size="50" font-weight="normal" fill="#000000">
+            <tspan x="200" y="89">泉海学校学生出入证</tspan>
+        </text>
+        <text id="年级：_________-班级：____" font-family="STSongti-SC-Regular, Songti SC" font-size="50" font-weight="normal" fill="#000000">
+            <tspan x="300" y="183">年级：_________</tspan>
+            <tspan x="300" y="298">班级：_________</tspan>
+            <tspan x="300" y="413">姓名：_________</tspan>
+        </text>
+    </g>
+</svg>
